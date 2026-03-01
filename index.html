@@ -5,30 +5,44 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
   
   <title>Frontend Mentor | Social links profile</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  Jessica Randall
-  London, United Kingdom
-  "Front-end developer and avid reader."
-
-  GitHub
-  Frontend Mentor
-  LinkedIn
-  Twitter
-  Instagram
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <main>
+    <article>
+      <div class="profile-card">
+        <div class="profile-img">
+          <img src="./assets/images/avatar-jessica.jpeg" alt="Profile picture of Jessica Randall">
+        </div>
+        <div class="profile-info">
+          <h1 class="text-preset1">Jessica Randall</h1>
+          <p class="place text-preset2-bold">London, United Kingdom</p>
+        </div>
+        <div class="leading-text text-preset2">
+          "Front-end developer and avid reader."
+        </div>
+        <div class="profile-links text-preset2-bold">
+          <a href="" class="links-item" id="github" onclick="setActiveLink(event)">GitHub</a>
+          <a href="" class="links-item" id="frontend-mentor" onclick="setActiveLink(event)">Frontend Mentor</a>
+          <a href="" class="links-item" id="linkedin" onclick="setActiveLink(event)">LinkedIn</a>
+          <a href="" class="links-item" id="twitter" onclick="setActiveLink(event)">Twitter</a>
+          <a href="" class="links-item" id="instagram" onclick="setActiveLink(event)">Instagram</a>
+        </div>
+      </div>
+    </article>
+    
+    <footer class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Your Name Here</a>.
+    </footer>
+  </main>
+  <script src="index.js"></script>
 </body>
 </html>

@@ -1,0 +1,128 @@
+:root {
+  --text-green: hsl(75, 94%, 57%);
+  --text-white: hsl(0, 0%, 100%);
+  --text-gray-900: hsl(0, 0%, 8%);
+  --text-gray-800: hsl(0, 0%, 12%);
+  --text-gray-700: hsl(0, 0%, 20%);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-family: 'Inter', sans-serif;
+  color: var(--text-white);
+  background-color: var(--text-gray-900);
+  text-align: center;
+  box-sizing: border-box;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  gap: 10px;
+}
+
+.text-preset1 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.text-preset2 {
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.text-preset2-bold {
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.profile-card {
+  background-color: var(--text-gray-800);
+  width: 327px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  border-radius: 12px;
+}
+
+.profile-card .profile-img {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-top: 24px;
+}
+
+.profile-card img {
+  width: 100%;
+  height: auto;
+}
+
+.profile-info h1, p {
+  margin: 0;
+}
+
+.profile-info .place {
+  color: var(--text-green);
+}
+
+.profile-card .profile-links {
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.profile-card .profile-links a.links-item {
+  width:100%;
+  text-decoration: none;
+  color: var(--text-white);
+  padding: 12px 0;
+  background-color: var(--text-gray-700);
+  margin: 0 24px;
+  border-radius: 8px;
+  transition: background-color 1s ease, color 1s ease;
+}
+
+.profile-card .profile-links a.links-item:hover {
+  background-color: var(--text-green);
+  color: var(--text-gray-700);
+}
+
+.profile-card .profile-links a.links-item.active {
+  background-color: var(--text-green);
+  color: var(--text-gray-700);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 768px) {
+  .profile-card {
+    width: 384px;
+  }
+
+  .profile-card .profile-img {
+    margin-top: 40px;
+  }
+
+  .profile-card .profile-links {
+    margin-bottom: 40px;
+  }
+}
